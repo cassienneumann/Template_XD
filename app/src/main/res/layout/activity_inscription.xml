@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_connexion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorInscription"
+    tools:context=".view.activity.ConnexionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:text="Inscription"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:layout_marginTop="100dp"/>
+
+            <EditText
+                android:id="@+id/email_inscription"
+                android:hint="@string/email"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+                <requestFocus/>
+            </EditText>
+
+            <EditText
+                android:id="@+id/name_utilisateur_inscription"
+                android:hint="@string/name_utilisateur"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+            <EditText
+                android:id="@+id/password_inscription"
+                android:hint="@string/password"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+
+            <Button
+                android:id="@+id/btn_envoyer_inscription"
+                android:text="@string/button_send"
+                android:textColor="@android:color/white"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="ou"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="260dp"/>
+
+            <ImageView
+                android:id="@+id/gmail"
+                android:src="@drawable/plus"
+                android:background="@drawable/bg_plus"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xhasmter.template_xd">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <!-- Activity Main -->
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Activity Settings -->
+        <activity
+            android:name=".view.activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".view.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.MainActivity" />
+        </activity>
+
+        <!-- Activity Splash -->
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity Connexion -->
+        <activity
+            android:name=".view.activity.ConnexionActivity"
+            android:theme="@style/AppTheme.Connexion">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.MainActivity" />
+        </activity>
+
+        <!-- Activity Iscription -->
+        <activity
+            android:name=".view.activity.InscriptionActivity"
+            android:theme="@style/AppTheme.Inscription">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.ConnexionActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

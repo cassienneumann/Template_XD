@@ -1,0 +1,10 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.example.xhasmter.template_xd.view.fragment.ActualiteFragment">
+
+
+</FrameLayout>

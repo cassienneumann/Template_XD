@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    tools:context="com.example.xhasmter.template_xd.view.fragment.TopFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/pb_conexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/pb_conexion"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/forcer_actualisation"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/pb_conexion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button_forcer"
+            android:text="@string/forcer_actualisation"
+            android:textAllCaps="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>

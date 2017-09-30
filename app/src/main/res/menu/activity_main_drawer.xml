@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_mon_appareil"
+            android:icon="@drawable/ic_account"
+            android:title="My Account" />
+
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notifications"
+            android:title="Notifications" />
+
+
+        <item
+            android:id="@+id/nav_xda_forum"
+            android:icon="@drawable/ic_forum"
+            android:title="Chat Forums" />
+
+    </group>
+
+    <!--  Sub Menus  -->
+    <item android:title="@string/others">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/share_app"
+                    android:icon="@drawable/ic_share"
+                    android:title="@string/share" />
+                <item
+                    android:id="@+id/rate_app"
+                    android:icon="@drawable/ic_rate"
+                    android:title="@string/rate" />
+
+                <item
+                    android:id="@+id/help"
+                    android:icon="@drawable/ic_help"
+                    android:title="@string/help" />
+            </group>
+        </menu>
+    </item>
+
+
+
+
+</menu>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_connexion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorConexion"
+    tools:context=".view.activity.ConnexionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="Connexion"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_utilisateur_connexion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="@string/name_utilisateur"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/password_connexion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:hint="@string/password"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_envoyer_connexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/button_send"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/not_member"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_inscription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:onClick="inscrireClick"
+                android:text="@string/button_inscription"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:id="@+id/ignorer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/ignorer"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/launch"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_toRightOf="@id/ignorer"
+                    android:src="@drawable/ic_action_launch" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="@string/vous_devz"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="260dp"
+                android:text="ou"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/gmail"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="230dp"
+                android:background="@drawable/bg_plus"
+                android:src="@drawable/plus" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
