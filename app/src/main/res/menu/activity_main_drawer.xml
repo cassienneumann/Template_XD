@@ -4,20 +4,20 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/nav_mon_appareil"
+            android:id="@+id/nav_my_account"
             android:icon="@drawable/ic_account"
-            android:title="My Account" />
+            android:title="@string/my_account" />
 
         <item
             android:id="@+id/nav_notification"
             android:icon="@drawable/ic_notifications"
-            android:title="Notifications" />
+            android:title="@string/notification" />
 
 
         <item
             android:id="@+id/nav_xda_forum"
             android:icon="@drawable/ic_forum"
-            android:title="Chat Forums" />
+            android:title="@string/chat_forums" />
 
     </group>
 
@@ -26,16 +26,16 @@
         <menu>
             <group android:checkableBehavior="none">
                 <item
-                    android:id="@+id/share_app"
+                    android:id="@+id/nav_share_app"
                     android:icon="@drawable/ic_share"
                     android:title="@string/share" />
                 <item
-                    android:id="@+id/rate_app"
+                    android:id="@+id/nav_rate_app"
                     android:icon="@drawable/ic_rate"
                     android:title="@string/rate" />
 
                 <item
-                    android:id="@+id/help"
+                    android:id="@+id/nav_help"
                     android:icon="@drawable/ic_help"
                     android:title="@string/help" />
             </group>

@@ -2,6 +2,7 @@ package com.example.xhasmter.template_xd.view.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.design.widget.NavigationView;
@@ -13,13 +14,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.xhasmter.template_xd.R;
 import com.example.xhasmter.template_xd.services.adapter.ViewPagerAdapter;
 import com.example.xhasmter.template_xd.view.fragment.ActualiteFragment;
 import com.example.xhasmter.template_xd.view.fragment.GeneralFragment;
 import com.example.xhasmter.template_xd.view.fragment.NouveauFragment;
-import com.example.xhasmter.template_xd.view.fragment.TopFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         // Listener the drawer toggle
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         //Sync the state of toggle
         toggle.syncState();
 
@@ -71,7 +72,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new ActualiteFragment(), "Actualite");
-        adapter.addFragment(new TopFragment(), "Top");
         adapter.addFragment(new NouveauFragment(), "Nouveau");
         adapter.addFragment(new GeneralFragment(), "General");
         viewPager.setAdapter(adapter);
@@ -122,22 +122,38 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     /**
      *
      */
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        //Handle the Mon appareil action
+        if (id == R.id.nav_my_account) {
 
-        if (id == R.id.nav_version_complete) {
-            // Handle the camera action
-        } else if (id == R.id.nav_mon_appareil) {
+            Toast.makeText(this,"My Account",Toast.LENGTH_SHORT).show();
+
+            // Handle the Notification action
+        } else if (id == R.id.nav_notification) {
+
+            Toast.makeText(this,"Notifications",Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_xda_forum) {
 
             Intent intent = new Intent(this,ConnexionActivity.class);
             startActivity(intent);
 
-        } else if (id == R.id.nav_search_plus) {
+        }else if (id == R.id.nav_share_app){
+
+            Toast.makeText(this,"Share app",Toast.LENGTH_SHORT).show();
+
+
+        }else if (id == R.id.nav_rate_app){
+
+            Toast.makeText(this,"Rate App",Toast.LENGTH_SHORT).show();
+
+
+        }else if (id == R.id.nav_help){
+
+            Toast.makeText(this,"Help",Toast.LENGTH_SHORT).show();
 
         }
 
